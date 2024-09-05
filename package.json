@@ -1,19 +1,49 @@
 {
   "name": "servicequotes-frontend",
   "version": "1.0.0",
+  "private": true,
   "description": "Front end da aplicação Service Quotes",
   "author": "Evandro Costa <evandro.souzac@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/evans-costa/frontend-servicequotes"
   },
+  "license": "ISC",
   "keywords": [
     "frontend",
     "dashboard",
     "quotes"
   ],
-  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --dir .",
+    "commit": "cz",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "commitizen": "^4.3.0",
+    "husky": "^9.1.5",
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
