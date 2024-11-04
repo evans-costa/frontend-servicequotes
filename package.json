@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
+    "lint:eslint:check": "eslint .",
     "lint:prettier:check": "prettier . --check",
     "lint:prettier:fix": "prettier . --write",
     "commit": "cz",
